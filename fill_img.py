@@ -63,7 +63,7 @@ if __name__ == '__main__':
     img_target = cv2.imread(imgTarget_path)
     json_dict = read_json(js_path)
 
-    bbox_info = json_dict['boxes'][0]['rectangle']
+    bbox_info = json_dict['boxes'][1]['rectangle']
     print('box_b rectangle , info: ', bbox_info)
 
     xmin, ymin = bbox_info['left_top']

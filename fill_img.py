@@ -2,7 +2,7 @@
 # @FileName :fill_img.py
 # @Time     :2021/12/20 下午9:52
 # @Author   :lx
-# *** no bug, much error ***
+# *** no bug, no error ***
 import json
 import cv2
 

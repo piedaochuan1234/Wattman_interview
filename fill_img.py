@@ -42,7 +42,7 @@ def fillBbox(img_target, img_fill, bbox, keepRatio: bool):
         img_fill = cv2.resize(img_fill, (newW, newH), interpolation=cv_inter)
         dx = (bboxW - newW) // 2
         dy = (bboxH - newH) // 2
-        img_resize = cv2.copyMakeBorder(img_fill, dy, dy, dx, dx, cv2.BORDER_CONSTANT, value=(114, 114, 114))
+        img_resize = cv2.copyMakeBorder(img_fill, dy, bboxH-newH-dy, dx, bboxW-newW-dx, cv2.BORDER_CONSTANT, value=(114, 114, 114))
         # print('img_resize shape: ',img_resize.shape)
     else:
 
